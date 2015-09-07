@@ -11,11 +11,22 @@ module.exports = function(grunt) {
             options: {
                 jshintrc: '.jshintrc'
             }
+        },
+        'oc-publish': {
+            options: {
+                registry: 'http://localhost:3030'
+            },
+            mycomponent: {
+                options: {
+                    componentPath: '../error-page-components/error-page/'
+                }
+            }
         }
     });
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadTasks('tasks/');
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('default', ['test']);
 };
