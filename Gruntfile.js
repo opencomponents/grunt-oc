@@ -7,10 +7,7 @@ module.exports = function(grunt) {
             all: [
                 'Gruntfile.js',
                 'tasks/*.js'
-            ],
-            options: {
-                jshintrc: '.jshintrc'
-            }
+            ]
         },
         'oc-publish': {
             options: {

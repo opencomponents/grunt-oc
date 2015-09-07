@@ -3,6 +3,8 @@ grunt-oc
 
 Grunt wrapper for [oc cli](https://github.com/opentable/oc)
 
+Intended for cases where you might have a more complex build pipeline than just `oc publish`.
+
 1) Make some grunt config
 
 ```
@@ -12,7 +14,7 @@ grunt.initConfig({
       registry: 'http://my.registry.com'
     },
     mycomponent: {
-      componentPath: './mycomponent'
+      componentPath: './mycomponent/buildOutput'
     }
   }
 });
@@ -29,8 +31,3 @@ grunt oc-publish -v
 3) ?
 
 4) Profit
-
-Todo:
-
-- [ ] publish (waiting for opentable/oc#103 and opentable/oc#104)
-- [ ] dev
