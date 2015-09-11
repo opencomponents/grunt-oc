@@ -14,7 +14,9 @@ grunt.initConfig({
       registry: 'http://my.registry.com'
     },
     mycomponent: {
-      componentPath: './mycomponent/buildOutput'
+      options: {
+        componentPath: './mycomponent/buildOutput'
+      }
     }
   }
 });
