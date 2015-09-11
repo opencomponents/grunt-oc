@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             },
             mycomponent: {
                 options: {
-                    componentPath: '../error-page-components/error-page/'
+                    componentPath: './my-component/'
                 }
             }
         }
