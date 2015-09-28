@@ -11,7 +11,9 @@ Intended for cases where you might have a more complex build pipeline than just 
 grunt.initConfig({
   'oc-publish': {
     options: {
-      registry: 'http://my.registry.com'
+      registry: 'http://my.registry.com',
+      username: 'myuser', // optional authentication
+      password: 'password'
     },
     mycomponent: {
       options: {

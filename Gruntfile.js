@@ -11,7 +11,9 @@ module.exports = function(grunt) {
         },
         'oc-publish': {
             options: {
-                registry: 'http://localhost:3030'
+                registry: 'http://localhost:3030',
+                username: 'myuser',
+                password: 'password'
             },
             mycomponent: {
                 options: {
