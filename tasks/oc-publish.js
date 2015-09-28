@@ -22,7 +22,9 @@ module.exports = function(grunt){
         var publish = require('oc/cli/facade/publish')(dependencies);
 
         publish({
-            componentPath: options.componentPath
+            componentPath: options.componentPath,
+            username: options.username,
+            password: options.password
         }, done);
     });
 };
