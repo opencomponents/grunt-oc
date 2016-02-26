@@ -4,7 +4,7 @@ var registryInstances = require('./support/dev-registry-instances');
 
 module.exports = function(grunt){
 
-  grunt.registerMultiTask('oc-dev-kill', 'kills all the oc dev registries instanciated via grunt oc-dev', function(){
+  grunt.registerMultiTask('oc-dev-kill', 'kills all the oc dev registries started via grunt oc-dev', function(){
 
     var done = this.async(),
         instances = registryInstances.get(),

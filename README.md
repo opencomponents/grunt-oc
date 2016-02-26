@@ -32,5 +32,5 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-oc');
 ```
 
-# Licese
+# License
 MIT
