@@ -46,6 +46,4 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks/');
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('default', ['test']);
-
-  grunt.registerTask('asd', ['oc-dev', 'oc-dev-kill']);
 };
