@@ -1,11 +1,17 @@
 grunt-oc
----
+========
 
 Grunt wrapper for [oc cli](https://github.com/opentable/oc)
 
-Intended for cases where you might have a more complex build pipeline than just `oc publish`.
+[![linux build](https://img.shields.io/travis/opentable/oc/master.svg?label=linux+build)](http://travis-ci.org/opentable/oc)
 
-1) Make some grunt config
+Disclaimer: this is a WIP.
+
+Cli commands supported:
+* oc dev (via oc-dev and oc-dev-kill tasks)
+* oc publish (via oc-publish task)
+
+# Config example
 
 ```
 grunt.initConfig({
@@ -26,12 +32,5 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-oc');
 ```
 
-2) Run it
-
-```
-grunt oc-publish -v
-```
-
-3) ?
-
-4) Profit
+# License
+MIT

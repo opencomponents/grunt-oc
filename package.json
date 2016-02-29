@@ -1,8 +1,8 @@
 {
   "name": "grunt-oc",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "grunt wrapper for oc cli",
-  "main": "index.js",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt"
   },
@@ -11,8 +11,10 @@
     "url": "git@github.com:opentable/grunt-oc.git"
   },
   "keywords": [
+    "gruntplugin",
     "grunt",
-    "oc"
+    "oc",
+    "opencomponents"
   ],
   "author": "Andy Royle <ajroyle@gmail.com>",
   "license": "MIT",
@@ -25,6 +27,6 @@
     "grunt-contrib-jshint": "^0.11.3"
   },
   "dependencies": {
-    "oc": "^0.17.1"
+    "oc": "^0.27.6"
   }
 }

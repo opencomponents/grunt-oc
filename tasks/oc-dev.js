@@ -2,26 +2,28 @@
 
 var Local = require('oc/cli/domain/local'),
     Logger = require('./support/logger'),
-    Registry = require('oc/cli/domain/registry');
+    registryInstances = require('./support/dev-registry-instances');
 
 module.exports = function(grunt){
 
-  grunt.registerMultiTask('oc-publish', 'publish a component', function(){
+  grunt.registerMultiTask('oc-dev', 'starts a oc dev registry', function(){
 
     var done = this.async(),
         options = this.options({}),
         logger = new Logger(grunt);
 
     var dependencies = {
-      registry: new Registry({ registry: options.registry }),
       local: new Local({ logger: logger }),
       logger: logger
     };
 
-    require('oc/cli/facade/publish')(dependencies)(options, function(err, res){
+    require('../../oc/cli/facade/dev')(dependencies)(options, function(err, registry){
       if(err){
         grunt.fatal(err);
+      } else {
+        registryInstances.add(registry);
       }
+      
       done();
     });
   });
