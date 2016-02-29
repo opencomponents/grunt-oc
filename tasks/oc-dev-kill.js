@@ -13,7 +13,7 @@ module.exports = function(grunt){
     var next = function(){
       c--;
       if(c === 0){
-        instances.flush();
+        registryInstances.flush();
         grunt.verbose.writeln('All instances killed');
         done();
       }
