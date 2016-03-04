@@ -17,7 +17,7 @@ module.exports = function(grunt){
       logger: logger
     };
 
-    require('../../oc/cli/facade/dev')(dependencies)(options, function(err, registry){
+    require('oc/cli/facade/dev')(dependencies)(options, function(err, registry){
       if(err){
         grunt.fatal(err);
       } else {
