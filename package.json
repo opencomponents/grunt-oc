@@ -1,6 +1,6 @@
 {
   "name": "grunt-oc",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "grunt wrapper for oc cli",
   "main": "Gruntfile.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "oc",
     "opencomponents"
   ],
-  "author": "Andy Royle <ajroyle@gmail.com>",
+  "author": "Matteo Figus <mfigus@opentable.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opentable/grunt-oc/issues"
@@ -27,6 +27,6 @@
     "grunt-contrib-jshint": "^0.11.3"
   },
   "dependencies": {
-    "oc": "^0.27.6"
+    "oc": "^0.27.9"
   }
 }
