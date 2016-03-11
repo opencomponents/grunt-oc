@@ -12,30 +12,57 @@ module.exports = function(grunt) {
       all: ['.']
     },
     'oc-dev': {
-      options: {
-        dirName: '.',
-        port: 3030,
-        baseUrl: 'http://localhost:3030/'
-      },
       myFolder: {
-        options: {}
+        options: {
+          dirName: '.',
+          port: 3030,
+          baseUrl: 'http://localhost:3030/'
+        }
       }
     },
     'oc-dev-kill': {
-      options: {},
-      all: {
+      allInstances: {
         options: {}
       }
     },
+    'oc-init': {
+      newComponent: {
+        options: {
+          componentName: 'newComponent',
+          templateType: 'jade'
+        }
+      }
+    },
+    'oc-mock': {
+      getToggle: {
+        options: {
+          targetType: 'plugin',
+          targetName: 'hello',
+          targetValue: 'world'
+        }
+      }
+    },
+    'oc-preview': {
+      myComponent: {
+        options: {
+          componentHref: 'https://components.com/my-component'
+        }
+      }
+    },
     'oc-publish': {
-      options: {
-        registry: 'http://localhost:3030/',
-        username: 'myuser',
-        password: 'password'
-      },
       mycomponent: {
         options: {
+          registry: 'http://localhost:3030/',
+          username: 'myuser',
+          password: 'password',
           componentPath: './my-component/'
+        }
+      }
+    },
+    'oc-registry': {
+      list: {
+        options: {
+          command: 'ls'
         }
       }
     }
