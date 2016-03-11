@@ -1,7 +1,7 @@
 'use strict';
 
 var Logger = require('./support/logger'),
-    Registry = require('oc/cli/domain/registry');;
+    Registry = require('oc/cli/domain/registry');
 
 module.exports = function(grunt){
 
