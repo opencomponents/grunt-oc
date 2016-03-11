@@ -15,7 +15,7 @@ OC cli command / grunt-oc tasks
 
 # Config example
 
-```
+```js
 grunt.initConfig({
   'oc-dev': {
     myFolder: {
