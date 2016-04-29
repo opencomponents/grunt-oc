@@ -1,6 +1,6 @@
 'use strict';
 
-var Local = require('oc/cli/domain/local'),
+var Local = require('oc/src/cli/domain/local'),
     Logger = require('./support/logger');
 
 module.exports = function(grunt){
@@ -16,7 +16,7 @@ module.exports = function(grunt){
       logger: logger
     };
 
-    require('oc/cli/facade/init')(dependencies)(options, function(err, res){
+    require('oc/src/li/facade/init')(dependencies)(options, function(err, res){
       if(err){
         grunt.fatal(err);
       }

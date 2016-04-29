@@ -1,6 +1,6 @@
 'use strict';
 
-var Local = require('oc/cli/domain/local'),
+var Local = require('oc/src/cli/domain/local'),
     Logger = require('./support/logger'),
     registryInstances = require('./support/dev-registry-instances');
 
@@ -17,7 +17,7 @@ module.exports = function(grunt){
       logger: logger
     };
 
-    require('oc/cli/facade/dev')(dependencies)(options, function(err, registry){
+    require('oc/src/cli/facade/dev')(dependencies)(options, function(err, registry){
       if(err){
         grunt.fatal(err);
       } else {
