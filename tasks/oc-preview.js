@@ -1,7 +1,7 @@
 'use strict';
 
 var Logger = require('./support/logger'),
-    Registry = require('oc/cli/domain/registry');
+    Registry = require('oc/src/cli/domain/registry');
 
 module.exports = function(grunt){
 
@@ -16,7 +16,7 @@ module.exports = function(grunt){
       logger: logger
     };
 
-    require('oc/cli/facade/preview')(dependencies)(options, function(err, res){
+    require('oc/src/cli/facade/preview')(dependencies)(options, function(err, res){
       if(err){
         grunt.fatal(err);
       }
