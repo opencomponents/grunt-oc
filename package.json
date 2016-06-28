@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/opentable/grunt-oc",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.3"
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0"
   },
   "dependencies": {
-    "oc": "^0.30.3"
+    "oc": "^0.31.1"
   }
 }
