@@ -56,19 +56,12 @@ grunt.initConfig({
     }
   },
   'oc-publish': {
-    mycomponent: {
+    myComponent: {
       options: {
         registry: 'http://localhost:3030/',
         username: 'myuser',
         password: 'password',
         componentPath: './my-component/'
-      }
-    }
-  },
-  'oc-registry': {
-    list: {
-      options: {
-        command: 'ls'
       }
     }
   }
