@@ -20,9 +20,10 @@ grunt.initConfig({
   'oc-dev': {
     myFolder: {
       options: {
-        dirName: '.',
+        dirPath: '.',
         port: 3030,
-        baseUrl: 'http://localhost:3030/'
+        baseUrl: 'http://localhost:3030/',
+        hotReloading: false
       }
     }
   },
