@@ -1,19 +1,18 @@
 'use strict';
 
-var Local = require('oc/src/cli/domain/local'),
-    Logger = require('./support/logger');
+var Local = require('oc/src/cli/domain/local'),    
+    logger = require('oc/src/cli/logger');
 
 module.exports = function(grunt){
 
   grunt.registerMultiTask('oc-init', 'initialises a component', function(){
 
     var done = this.async(),
-        options = this.options({}),
-        logger = new Logger(grunt);
+        options = this.options({});
 
     var dependencies = {
-      local: new Local({ logger: logger }),
-      logger: logger
+      local: new Local(),
+      logger
     };
 
     require('oc/src/li/facade/init')(dependencies)(options, function(err, res){
