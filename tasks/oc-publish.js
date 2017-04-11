@@ -1,7 +1,7 @@
 'use strict';
 
 var Local = require('oc/src/cli/domain/local'),
-    Logger = require('./support/logger'),
+    logger = require('oc/src/cli/logger'),
     Registry = require('oc/src/cli/domain/registry');
 
 module.exports = function(grunt){
@@ -9,13 +9,12 @@ module.exports = function(grunt){
   grunt.registerMultiTask('oc-publish', 'publish a component', function(){
 
     var done = this.async(),
-        options = this.options({}),
-        logger = new Logger(grunt);
+        options = this.options({});
 
     var dependencies = {
       registry: new Registry({ registry: options.registry }),
-      local: new Local({ logger: logger }),
-      logger: logger
+      local: new Local(),
+      logger
     };
 
     require('oc/src/cli/facade/publish')(dependencies)(options, function(err, res){
