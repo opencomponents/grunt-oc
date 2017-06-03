@@ -3,7 +3,7 @@ grunt-oc
 
 Grunt wrapper for [OpenComponents cli](https://github.com/opentable/oc)
 
-[![linux build](https://img.shields.io/travis/opentable/grunt-oc/master.svg?label=linux+build)](http://travis-ci.org/opentable/grunt-oc)
+[![linux build](https://img.shields.io/travis/opencomponents/grunt-oc/master.svg?label=linux+build)](http://travis-ci.org/opencomponents/grunt-oc)
 
 OC cli command / grunt-oc tasks
 * `oc dev` => `oc-dev` and `oc-dev-kill` tasks

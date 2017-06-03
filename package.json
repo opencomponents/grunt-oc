@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:opentable/grunt-oc.git"
+    "url": "https://github.com/opencomponents/grunt-oc"
   },
   "keywords": [
     "gruntplugin",
@@ -19,9 +19,9 @@
   "author": "Matteo Figus <mfigus@opentable.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opentable/grunt-oc/issues"
+    "url": "https://github.com/opencomponents/grunt-oc/issues"
   },
-  "homepage": "https://github.com/opentable/grunt-oc",
+  "homepage": "https://github.com/opencomponents/grunt-oc",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0"
