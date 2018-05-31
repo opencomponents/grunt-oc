@@ -1,8 +1,5 @@
 grunt-oc
 ========
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/opencomponents/grunt-oc.svg)](https://greenkeeper.io/)
-
 Grunt wrapper for [OpenComponents cli](https://github.com/opentable/oc)
 
 [![linux build](https://img.shields.io/travis/opencomponents/grunt-oc/master.svg?label=linux+build)](http://travis-ci.org/opencomponents/grunt-oc)
