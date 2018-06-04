@@ -1,6 +1,6 @@
 {
   "name": "grunt-oc",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "description": "grunt wrapper for oc cli",
   "main": "Gruntfile.js",
   "scripts": {
