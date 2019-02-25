@@ -27,6 +27,6 @@
     "grunt-contrib-jshint": "2.0.0"
   },
   "dependencies": {
-    "oc": "0.45.2"
+    "oc": "0.45.4"
   }
 }
