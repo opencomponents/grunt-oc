@@ -24,7 +24,7 @@
   "homepage": "https://github.com/opencomponents/grunt-oc",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "2.0.0"
+    "grunt-contrib-jshint": "2.1.0"
   },
   "dependencies": {
     "oc": "0.45.4"
