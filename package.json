@@ -4,7 +4,9 @@
   "description": "grunt wrapper for oc cli",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
     "grunt-contrib-jshint": "2.1.0"
   },
   "dependencies": {
-    "oc": "0.48.1"
-  }
+    "oc": "0.48.1",
+    "snyk": "^1.192.0"
+  },
+  "snyk": true
 }
