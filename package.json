@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/opencomponents/grunt-oc",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-contrib-jshint": "2.1.0"
   },
   "dependencies": {
